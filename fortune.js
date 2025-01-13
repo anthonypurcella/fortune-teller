@@ -3,3 +3,8 @@ const fortunePromts = {
     action: ['seek out', 'ponder', 'talk about', 'do not stop', 'stop', 'cherish'],
     resolve: ['whats inside of yourself', 'the way you view the world', 'what friendship you have with your friends']
 }
+
+function generateNumber(num) {
+    return Math.floor(Math.random() * num);
+}
+
