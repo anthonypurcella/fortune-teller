@@ -8,3 +8,17 @@ function generateNumber(num) {
     return Math.floor(Math.random() * num);
 }
 
+let fortuneGiven = [];
+
+function giveFortune() {
+  let personalIndex = generateNumber(fortunePromts.feeling.length);
+  let personalFeeling = fortunePromts.feeling[personalIndex];
+
+  let actionIndex = generateNumber(fortunePromts.action.length);
+  let personalAction = fortunePromts.action[actionIndex];
+
+  let resolveIndex = generateNumber(fortunePromts.resolve.length);
+  let personalResolve = fortunePromts.resolve[resolveIndex];
+}
+
+console.log(giveFortune());
